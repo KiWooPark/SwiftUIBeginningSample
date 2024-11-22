@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		16D5071F2CE9E3420035245D /* SwiftUIBeginningSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5071E2CE9E3420035245D /* SwiftUIBeginningSampleApp.swift */; };
-		16D507212CE9E3420035245D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D507202CE9E3420035245D /* ContentView.swift */; };
 		16D507232CE9E3440035245D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D507222CE9E3440035245D /* Assets.xcassets */; };
 		16D507262CE9E3440035245D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D507252CE9E3440035245D /* Preview Assets.xcassets */; };
+		16D5072E2CE9E79A0035245D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5072D2CE9E79A0035245D /* MainView.swift */; };
+		16D507312CE9EA990035245D /* StacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D507302CE9EA990035245D /* StacksView.swift */; };
+		16D507362CEF4D060035245D /* StackBoxsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D507352CEF4D060035245D /* StackBoxsView.swift */; };
+		16D5073B2CEF5DB70035245D /* StackBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5073A2CEF5DB70035245D /* StackBoxesView.swift */; };
+		16D5073D2CEF61540035245D /* StackAlignmentMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5073C2CEF61540035245D /* StackAlignmentMapper.swift */; };
+		16D5073F2CEF726B0035245D /* StackOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5073E2CEF726B0035245D /* StackOptionView.swift */; };
+		16D507412CF064CA0035245D /* StackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D507402CF064CA0035245D /* StackViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16D5071B2CE9E3420035245D /* SwiftUIBeginningSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBeginningSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D5071E2CE9E3420035245D /* SwiftUIBeginningSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginningSampleApp.swift; sourceTree = "<group>"; };
-		16D507202CE9E3420035245D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16D507222CE9E3440035245D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16D507252CE9E3440035245D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16D5072D2CE9E79A0035245D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		16D507302CE9EA990035245D /* StacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksView.swift; sourceTree = "<group>"; };
+		16D507352CEF4D060035245D /* StackBoxsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackBoxsView.swift; sourceTree = "<group>"; };
+		16D5073A2CEF5DB70035245D /* StackBoxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackBoxesView.swift; sourceTree = "<group>"; };
+		16D5073C2CEF61540035245D /* StackAlignmentMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAlignmentMapper.swift; sourceTree = "<group>"; };
+		16D5073E2CEF726B0035245D /* StackOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOptionView.swift; sourceTree = "<group>"; };
+		16D507402CF064CA0035245D /* StackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,8 @@
 		16D5071D2CE9E3420035245D /* SwiftUIBeginningSample */ = {
 			isa = PBXGroup;
 			children = (
+				16D5072C2CE9E78F0035245D /* View */,
 				16D5071E2CE9E3420035245D /* SwiftUIBeginningSampleApp.swift */,
-				16D507202CE9E3420035245D /* ContentView.swift */,
 				16D507222CE9E3440035245D /* Assets.xcassets */,
 				16D507242CE9E3440035245D /* Preview Content */,
 			);
@@ -65,6 +77,44 @@
 				16D507252CE9E3440035245D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16D5072C2CE9E78F0035245D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16D5072F2CE9EA870035245D /* StackView */,
+				16D5072D2CE9E79A0035245D /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16D5072F2CE9EA870035245D /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				16D507402CF064CA0035245D /* StackViewModel.swift */,
+				16D507322CEF4AD20035245D /* StackComponents */,
+				16D507372CEF5CEE0035245D /* Views */,
+				16D507302CE9EA990035245D /* StacksView.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		16D507322CEF4AD20035245D /* StackComponents */ = {
+			isa = PBXGroup;
+			children = (
+				16D507352CEF4D060035245D /* StackBoxsView.swift */,
+				16D5073C2CEF61540035245D /* StackAlignmentMapper.swift */,
+			);
+			path = StackComponents;
+			sourceTree = "<group>";
+		};
+		16D507372CEF5CEE0035245D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16D5073A2CEF5DB70035245D /* StackBoxesView.swift */,
+				16D5073E2CEF726B0035245D /* StackOptionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16D507212CE9E3420035245D /* ContentView.swift in Sources */,
+				16D5073B2CEF5DB70035245D /* StackBoxesView.swift in Sources */,
+				16D507362CEF4D060035245D /* StackBoxsView.swift in Sources */,
+				16D507412CF064CA0035245D /* StackViewModel.swift in Sources */,
+				16D5073D2CEF61540035245D /* StackAlignmentMapper.swift in Sources */,
 				16D5071F2CE9E3420035245D /* SwiftUIBeginningSampleApp.swift in Sources */,
+				16D507312CE9EA990035245D /* StacksView.swift in Sources */,
+				16D5073F2CEF726B0035245D /* StackOptionView.swift in Sources */,
+				16D5072E2CE9E79A0035245D /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
